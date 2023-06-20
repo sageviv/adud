@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gonzales Premium Guitars | Cart</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/12d0cdfeb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .cart {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        z-index: 100;
+        background: rgb(231, 226, 221);
+        padding: 1.5rem;
+        transition: var(--mainTransition);
+        /*transform: translateX(100%);*/
+      }
+
+      .showCart {
+        transform: translateX(0);
+      }
+      .transparentBcg {
+        visibility: visible;
+      }
+    </style>
+
+    <title>Gonzales Premium Guitars</title>
+  </head>
+  <body>
+    <!----
+    <nav class="navigation">
+        <div class="navItems"><a href="#home">Gonzales Premium Guitars</a></div>
+        <div id="cart" class="navItems"><i class="fa-solid fa-dolly"></i></div>
+    </nav>
+    ---->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-guitar" style="color: transparent"></i>
+        </span>
+        <a href="index.html" class="logodaw" style="font-size: 3rem"
+          >Gonzales <span style="color: #f09d51">Premium</span> Guitars</a
+        >
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus" style="color: white"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- homepage 
+    <section class="home" id="home">
+        <div class="releases">
+            <img class="homeImg" src="images\home_banner.jpeg" alt="home">
+        </div>
+        <h2 class="catch" style="font-weight: 400;"> Exclusive Deals at your Fingertips...</h1>
+        <h1 class="shope"><a href="#shop">SHOP NOW</a></h1>
+    </section> -->
+
+    <!-- shop 
+    <section class="shop" id="shop">
+        <div class="container_grid">
+            <div class="card">
+                <img src="images\furch.jpg" alt="Furch" style="width:100%">
+                <h3>Furch G-CY</h3>
+                <p class="price">₱106,500</p>
+                <p>Grand Auditorium body shape<br>
+                Solid Top AAA Red Cedar<br>
+                Ebony Fingerboard</p>
+                <p><button class="btn">Add to Cart</button></p>
+              </div>
+              <div class="card">
+                <img src="images\lowden.jpg" alt="lowden" style="width:100%">
+                <h3>Lowden F-35</h3>
+                <p class="price">₱285,000</p>
+                <p>
+                AAAA grade tone woods<br>
+                Ebony Maple Fingerboard<br>
+                Gotoh 510 tuners</p>
+                <p><button class="btn">Add to Cart</button></p>
+              </div>
+              <div class="card">
+                <img src="images\taylor-removebg-preview.png" alt="taylor" style="width:100%;">
+                <h3>Taylor 322ce</h3>
+                <p class="price">₱125,600</p>
+                <p>Grand Auditorium body shape<br>
+                Solid Top AAA Mahogany<br>
+                African Ebony Fingerboard</p>
+                <p><button class="btn">Add to Cart</button></p>
+              </div>
+              <div class="card">
+                <img src="images\furch.jpg" alt="Furch" style="width:100%">
+                <h3>Furch G-CY</h3>
+                <p class="price">₱106,500</p>
+                <p>Grand Auditorium body shape<br>
+                Solid Top AAA Red Cedar<br>
+                Ebony Fingerboard</p>
+                <p><button class="btn">Add to Cart</button></p>
+              </div>       
+              <div class="card">
+                <img src="images\lowden.jpg" alt="lowden" style="width:100%">
+                <h3>Lowden F-35</h3>
+                <p class="price">₱285,000</p>
+                <p>
+                AAAA grade tone woods<br>
+                Ebony Maple Fingerboard<br>
+                Gotoh 510 tuners</p>
+                <p><button class="btn">Add to Cart</button></p>
+              </div>
+        </div>
+
+    </section> -->
+
+    <!-- hero  -->
+    <!-- Products-->
+
+    <section class="products" id="shopee" hidden="hidden">
+      <div class="section-title">
+        <h2>Acoustic Collection</h2>
+      </div>
+      <div class="products-center"></div>
+    </section>
+    <!-- End of Products-->
+
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <a
+          class="close-cart"
+          href="product.html"
+          style="color: rgb(240, 157, 81); font-size: 3.5rem"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h2>your cart</h2>
+        <div class="cart-content">
+          <!--cart item-->
+          <!-- <div class="cart-item"> -->
+
+          <!--/div-->
+          <!--cart item end-->
+        </div>
+        <div class="cart-footer">
+          <h3 style="color: black">
+            your total : ₱ <span class="cart-total">0</span>
+          </h3>
+          <button class="clear-cart banner-btn">proceed to checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- end cart -->
+    <script src="ProductScreen.js"></script>
+  </body>
+</html>
